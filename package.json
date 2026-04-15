@@ -1,0 +1,32 @@
+{
+  "name": "wordhoso-desktop",
+  "version": "1.0.0",
+  "description": "WordHoSo Add-in chuyển thành phần mềm desktop Windows bằng Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "author": "HoSoSoftware",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "pizzip": "^3.1.4",
+    "docxtemplater": "^3.42.3",
+    "file-saver": "^2.0.5"
+  },
+  "build": {
+    "appId": "com.hoso.wordhoso-desktop",
+    "productName": "WordHoSo Desktop",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    }
+  }
+}
